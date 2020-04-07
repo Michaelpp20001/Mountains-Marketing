@@ -15,8 +15,9 @@ nav {
     list-style: none;
 }
 
-ul,
-
+ul li {
+    list-style-type: none;
+}
 a {
     text-decoration: none;
     opacity: 0.75;
@@ -168,4 +169,8 @@ header nav li {
 
 .destinations .grid li.large {
     flex-basis: 70%;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
 }
