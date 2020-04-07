@@ -18,6 +18,7 @@ nav {
 a {
     text-decoration: none;
     opacity: 0.75;
+    color: #fff;
 }
 
 a:hover {
@@ -30,7 +31,7 @@ a.btn {
     font-weight: bold;
     text-align: center;
     background-color: #eda09f;
-    opacity: 0.75;
+    opacity: 1;
 }
 
 section {
@@ -42,12 +43,15 @@ section {
 /*Header Styles*/
 
 header {
+    position: absolute;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 35px 100px 0;
     animation: 1s fadein 0.5s forwards;
     opacity: 0;
+    color: #fff;
 }
 
 @keyframes fadein {
@@ -76,6 +80,7 @@ header nav li {
     justify-content: center;
     text-align: center;
     min-height: 100vh;
+    color: #fff;
 }
 
 .hero .background-image {
@@ -101,4 +106,17 @@ header nav li {
 
 .hero a.btn {
     padding: 20px 46px;
+}
+
+.hero-content-area {
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+    100% {
+        opacity: 1;
+        margin: 0;
+    }
 }
